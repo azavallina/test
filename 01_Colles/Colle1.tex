@@ -1,0 +1,98 @@
+\documentclass[a4paper,11pt]{article}
+
+\input{../src_LaTeX/cours_cpge.tex}
+\input{../src_LaTeX/boites.tex}
+
+\renewcommand{\baselinestretch}{1.15}
+
+
+\begin{document}
+
+\pagestyle{fancy}
+\lhead{Colle 1 : Analyse des systèmes}
+\lfoot{Lycée Jeanne D'Albret}
+\rfoot{PCSI 2015-2016}
+\rhead{}
+
+\section{Camping}
+
+Les loisirs font partie intégrante des sociétés de consommation actuelles. Les hommes apprécient particulièrement les voyages et les vacances. Certains optent pour le caravaning afin de goûter au mieux ces moments de détente.
+
+
+Pour positionner correctement une caravane sur un emplacement dans un terrain, il faut manoeuvrer celle-ci attelée au véhicule qui la tracte, ce qui n'est pas toujours très aisé. Il est donc souvent nécessaire de \og désatteler \fg et de positionner manuellement la caravane. Cette opération, qui peut s'avérer très pénible, a donné naissance au besoin à l'origine de la conception d'un nouveau système : un petit robot tracteur, télécommandable à distance.
+
+\figsl{fig/Camping_2}{.4}{fig:camping}
+
+Les caractéristiques du Camper Trolley sont données dans le tableau suivant :
+
+\begin{tabular}{|c|c|}
+\hline
+Masse maximale de la caravane pouvant être tractée & 1,5 tonne en conditions optimales d'adhérence \\
+\hline
+Masse du Camper Trolley & 16kg \\
+\hline
+Vitesse de déplacement & $8m.min^{-1}$ \\
+\hline
+Autonomie &10min d'utilisation en continu \\
+\hline
+Alimentation en énergie & batterie lithium/ion 14,4V 5600mA.h \\
+\hline
+Rechargement & Chargeur secteur 230V - 14,4V - 1A \\
+& Panneau photovoltaïque 18V; 17W \\
+\hline
+Pilotage du Camper Trolley & Télécommande munie de 5 touches : \\
+&AV (avant), AR (arrière), GA (gauche), \\
+&DR (droite), AU (arrêt d'urgence) \\
+\hline
+\end{tabular}
+
+
+\question{Donner le diagramme des cas d'utilisation}
+
+
+\question{Donner le diagramme d'exigence traduisant le cahier des charges}
+
+
+\newpage
+
+\section{Radio-Reveil}
+
+Étudions le fonctionnement d'un radio-réveil à projection.
+
+\figsl{fig/radio_reveil}{.4}{fig:reveil}
+
+\resetQuestions
+
+\question{Donner le diagramme des cas d'utilisation}
+
+
+\question{Donner le diagramme d'exigence traduisant le cahier des charges}
+
+
+
+\newpage
+
+\section{Lave-Linge}
+
+
+\figsl{fig/LV}{.4}{fig:LV}
+
+On s'intéresse dans cet exercice à l'analyse fonctionnelle d'une machine à laver.
+On se placera dans le cas d'une machine à laver de capacité 6 kg, dont les fonctions seront de brasser, rincer et essorer le linge, selon le programme choisi par l'utilisateur. Le choix du programme se fait après allumage de la machine (lumière rouge allumée). Il permet d'adapter le cycle de lavage à la nature et au degré de saleté du linge. Pour ne pas abimer un linge fragile, le choix du programme permet éventuellement de modifier, via deux boutons du bandeau de commande, la température de l'eau de lavage (froid, 30$\degres$, 40$\degres$, 60$\degres$ ou 90$\degres$), ainsi que la vitesse d'essorage (400, 800 ou 1200 tr/min).
+Une alarme indique la fin du programme.
+
+D'un point de vue sécurité, le cycle de lavage ne peut démarrer qu'une fois la porte fermée. Celle-ci reste verrouillée tout le temps d'exécution du cycle de lavage et sera autorisée à l'ouverture une minute après la fin de l'essorage.
+\resetQuestions
+
+
+
+
+\question{Donner le diagramme des cas d'utilisation}
+
+
+\question{Donner le diagramme d'exigence}
+
+
+
+
+\end{document}
